@@ -5,7 +5,7 @@ import java.util.Date;
 public class Book {
     private String name;
     private String autor;
-    private Date publisher;
+    private int publisher;
     private String genre;
     private static Owner owner;
 
@@ -13,14 +13,14 @@ public class Book {
     }
 
 
-     public Book (String name, String autor, Date publisher, String genre) {
+     public Book (String name, String autor, int publisher, String genre) {
      this.name = name;
      this.autor = autor;
      this.publisher = publisher;
      this.genre = genre;
      setOwner(new Owner("Somebody"),"1234");
      } //Todo конструктор
-    public Book (String name, String autor, Date publisher, String genre,String nameOwner,String password) {
+    public Book (String name, String autor, int publisher, String genre,String nameOwner,String password) {
         this.name = name;
         this.autor = autor;
         this.publisher = publisher;
@@ -56,11 +56,11 @@ public class Book {
         this.autor = autor;
     }
 
-    public Date getPublisher() {
+    public int getPublisher() {
         return publisher;
     }
 
-    public void setPublisher(Date publisher) {
+    public void setPublisher(int publisher) {
         this.publisher = publisher;
     }
 
